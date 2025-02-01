@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-top-header',
+  selector: 'top-header',
   standalone: false,
   
   templateUrl: './top-header.component.html',
