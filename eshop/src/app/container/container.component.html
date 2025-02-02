@@ -1,4 +1,5 @@
 <div class="ekart-product--container">
+    <!--
     <p>Name: {{product.name}}</p>
     <p>Price: ${{product.price}}</p>
     <p>Color: {{product.color}}</p>
@@ -6,6 +7,11 @@
     <button (click)="decrement()">-</button>
     <span>{{addToCart}}</span>
     <button (click)="increment()">+</button>
-    <!-- <input (input)="onNameChange($event)">
+    <input (input)="onNameChange($event)">
     <p>name : {{name}}</p> -->
+    <search></search>
+    <!-- <div *ngFor="let item of listOfString">
+        <p>{{item}}</p>
+    </div> -->
+    <product-list></product-list>
 </div>
