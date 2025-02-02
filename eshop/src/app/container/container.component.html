@@ -9,9 +9,9 @@
     <button (click)="increment()">+</button>
     <input (input)="onNameChange($event)">
     <p>name : {{name}}</p> -->
-    <search></search>
+    <search (searchEvent)="handleSearch($event)"></search>
     <!-- <div *ngFor="let item of listOfString">
         <p>{{item}}</p>
     </div> -->
-    <product-list></product-list>
+    <product-list [searchText]="searchTextContainer"></product-list>
 </div>
