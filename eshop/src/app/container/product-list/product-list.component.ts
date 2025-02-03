@@ -18,7 +18,7 @@ export class ProductListComponent {
       gender: "MEN",
       category: "RUNNING",
       size: [6, 7, 8, 9, 10],
-      color: ["White", "Blue", "Black"],
+      color: ["Red", "Blue", "Black"],
       price: 160,
       discountPrice:140,
       is_in_inventory: true,
