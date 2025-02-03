@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Product } from '../../models/product';
 
 @Component({
   selector: 'product-list',
@@ -540,6 +541,8 @@ export class ProductListComponent {
   totalProductCountOutOfStock = this.products.filter(p => p.is_in_inventory === false).length;
   selectedFilterRadioButton : string = "all";
   @Input() searchText : string = '';
+
+  selectedProduct : Product;
 
   onFilterChange(value : string){
     this.selectedFilterRadioButton = value;

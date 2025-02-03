@@ -13,5 +13,13 @@
     <!-- <div *ngFor="let item of listOfString">
         <p>{{item}}</p>
     </div> -->
-    <product-list [searchText]="searchTextContainer"></product-list>
+    <product-list 
+    #productListComponent
+    [searchText]="searchTextContainer"
+    ></product-list>
+
+    <product-detail 
+    [productListComp]="productListComponent"
+    *ngIf="productListComponent.selectedProduct"
+    ></product-detail>
 </div>

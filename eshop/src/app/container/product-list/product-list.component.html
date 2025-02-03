@@ -8,6 +8,7 @@
   <!-- selectedFilterRadioButton === 'all' || product.is_in_inventory.toString() === selectedFilterRadioButton -->
   <div *ngFor="let product of products">
     <product 
+    (click)="selectedProduct = product"
     *ngIf = "searchText === '' || product.name.toLowerCase().includes(searchText)"
     [product]="product"></product>
   </div>
